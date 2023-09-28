@@ -1,0 +1,105 @@
+<!Doctype HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="new.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+      </style>
+</head>
+
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <p class="logo blue">Taskify</p>
+        <a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i> Dashboard</a>
+        <a href="#" class="icon-a"><i class="fa fa-users icons"></i> Calender</a>
+        <a href="#" class="icon-a"><i class="fa fa-list icons"></i> Projects</a>
+        <a href="#" class="icon-a"><i class="fa fa-tasks icons"></i> Folders</a>
+    </div>
+    <div id="main">
+
+        <div class="head">
+            <div class="col-div-6">
+                <span style="font-size:30px;cursor:pointer; color: #1c4853;" class="nav">☰ Dashboard</span>
+                <span style="font-size:30px;cursor:pointer; color: #1c4853;" class="nav2">☰ Dashboard</span>
+            </div>
+
+
+                <a href="index.html">LOGIN/REGISTER</a>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="clearfix"></div>
+        <br />
+
+        <div class="col-div-3">
+            <div class="box yellow">
+                <p><span>Youtube</span><br>Last Video</p>
+                
+                <i class="fa fa-users box-icon"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box lavender">
+                <p><span>Instagram</span></br>Last Reel</p>
+               
+            </div>
+        </div>
+        <div class="col-div-3">
+            <div class="box grey">
+                <p><span>Twitter</span></br>Last Post</p>
+                <i class="fa fa-shopping-bag box-icon"></i>
+            </div>
+        </div>
+        <div class="col-div-3">
+            <a href="user_work.html">
+            <div class="box">
+                <p>78<br /><span>Tasks</span></p>
+                <i class="fa fa-tasks box-icon"></i>
+            </div>
+        </a>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $(".nav").click(function () {
+            $("#mySidenav").css('width', '70px');
+            $("#main").css('margin-left', '70px');
+            $(".logo").css('visibility', 'hidden');
+            $(".logo span").css('visibility', 'visible');
+            $(".logo span").css('margin-left', '-10px');
+            $(".icon-a").css('visibility', 'hidden');
+            $(".icons").css('visibility', 'visible');
+            $(".icons").css('margin-left', '-8px');
+            $(".nav").css('display', 'none');
+            $(".nav2").css('display', 'block');
+        });
+
+        $(".nav2").click(function () {
+            $("#mySidenav").css('width', '300px');
+            $("#main").css('margin-left', '300px');
+            $(".logo").css('visibility', 'visible');
+            $(".icon-a").css('visibility', 'visible');
+            $(".icons").css('visibility', 'visible');
+            $(".nav").css('display', 'block');
+            $(".nav2").css('display', 'none');
+        });
+
+    </script>
+
+</body>
+
+
+</html>
